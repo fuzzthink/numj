@@ -14,26 +14,20 @@ __NumJs__ is licensed under the [MIT license](https://github.com/nicolaspanel/nu
 
 __[See this jsfiddle](https://jsfiddle.net/nicolaspanel/047gwg0q/)__ for a concrete example of how to use the library to manipulate images in the browser.
 
+## Fork notes
+This fork is renamed as numj as the [sharp](https://github.com/lovell/sharp) package is removed. One reason for removal of sharp is due to compilation errors on some system during `npm install`. This error is due to the need to specify the C++ compiler and can be done via `CXX=clang++ npm install`. The main reason however is that npm and yarn will sometimes error due to sharp when removing packages that seems to have nothing to do with it. Removal of sharp means that image processing is removed as well. Thus, for those who uses numjs for matrices and transforms only, this fork is useful.
+ 
 ## Installation
 
-### on node.js
-
 ```sh
-npm install numjs
+npm install numj
+# OR
+yarn add numj
 ```
 
 ```js
-var nj = require('numjs');
+var nj = require('numj');
 ...
-```
-
-### on the browser
-```sh
-bower install numjs
-```
-
-```html
-<script src="bower_packages/numjs/dist/numjs.min.js"></script>
 ```
 
 

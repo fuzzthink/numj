@@ -1,5 +1,5 @@
 {
-  "name": "numjs",
+  "name": "numj",
   "version": "0.15.0",
   "description": "Like NumPy, in JavaScript",
   "main": "src/index.js",
@@ -14,7 +14,6 @@
     "ndarray-fft": "^1.0.0",
     "ndarray-gemm": "^1.0.0",
     "ndarray-ops": "^1.2.2",
-    "sharp": "^0.17.3",
     "typedarray-pool": "^1.1.0"
   },
   "devDependencies": {
@@ -59,7 +58,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/nicolaspanel/numjs.git"
+    "url": "git://github.com/fuzzthink/numj.git"
   },
   "keywords": [
     "ndarray",

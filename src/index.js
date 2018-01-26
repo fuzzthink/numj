@@ -1,6 +1,5 @@
 'use strict';
 
-var ndarray = require('ndarray');
 var cwise = require('cwise');
 var ops = require('ndarray-ops');
 var ndFFT = require('ndarray-fft');
@@ -783,7 +782,6 @@ module.exports = {
   config: CONF,
   dtypes: DTYPES,
   NdArray: NdArray,
-  ndarray: ndarray,
   array: NdArray.new,
   arange: arange,
   reshape: reshape,
@@ -842,5 +840,5 @@ module.exports = {
   uint32: function (array) { return NdArray.new(array, 'uint32'); },
   float32: function (array) { return NdArray.new(array, 'float32'); },
   float64: function (array) { return NdArray.new(array, 'float64'); },
-  images: require('./images')
+  // images: require('./images')
 };
